@@ -20,7 +20,7 @@ ETATS_ACCEPTES = [
     "Neuf sans étiquette"
 ]
 
-INTERVALLE = 120  # 120 secondes = 2 minutes
+INTERVALLE = 120 
 
 FICHIER_ANNONCES = "annonces_vues.txt"
 
@@ -83,7 +83,7 @@ def envoyer_discord(titre, marque, etat, prix, lien):
         )
 
 
-# vinted part
+    # vinted part
 
 def analyser_page(page, annonces_vues):
 
@@ -212,7 +212,7 @@ def analyser_page(page, annonces_vues):
             url_complete
         )
 
-        # Mémoire
+        
         annonces_vues.add(identifiant)
 
         sauvegarder_annonce(
